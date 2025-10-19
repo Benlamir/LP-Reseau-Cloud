@@ -1,0 +1,73 @@
+🧠 1. Qu’est-ce qu’un système d’exploitation ?
+
+Un système d’exploitation (SE) est un logiciel qui sert d’intermédiaire entre l’utilisateur et le matériel.
+➡️ Il gère les ressources de la machine (processeur, mémoire, disque, périphériques) et fournit un environnement d’exécution pour les programmes.
+📘 C’est un gestionnaire de ressources et une machine virtuelle simplifiée.
+
+🐧 2. Qu’est-ce que Linux ?
+
+Linux est un système d’exploitation libre et open source, inspiré d’UNIX, créé par Linus Torvalds en 1991.
+Il repose sur un noyau Linux et des outils issus du projet GNU, d’où le nom GNU/Linux.
+➡️ Gratuit, stable, multiutilisateur, multitâche et portable.
+
+⚙️ 3. Qu’est-ce qu’un noyau (kernel) ?
+
+Le noyau est le cœur du système d’exploitation.
+➡️ Il gère :
+
+la mémoire,
+
+les processus,
+
+les fichiers,
+
+les périphériques d’entrée/sortie.
+Il est chargé en mémoire au démarrage du système et assure la communication entre le matériel et les logiciels.
+
+💿 4. Qu’est-ce qu’une distribution GNU/Linux ?
+
+Une distribution est un ensemble complet contenant :
+
+le noyau Linux,
+
+les outils GNU,
+
+un installateur,
+
+un gestionnaire de paquets,
+
+et souvent une interface graphique.
+💡 Exemples : Ubuntu, Debian, Fedora, RedHat, SUSE, Mandriva.
+
+📦 5. Qu’est-ce qu’un paquet (package) sous GNU/Linux ?
+
+Un paquet est un fichier d’installation contenant un programme, ses dépendances et ses informations de configuration.
+➡️ Il est géré par un gestionnaire de paquets (ex : apt pour Debian/Ubuntu, rpm pour RedHat/Fedora).
+
+🖥️ 6. Qu’est-ce qu’une GUI ? Qu’est-ce qu’une CLI ?
+
+GUI (Graphical User Interface) : Interface graphique avec fenêtres, icônes et souris (ex : GNOME, KDE).
+
+CLI (Command Line Interface) : Interface en ligne de commande (Shell/Bash) où l’on tape des instructions texte.
+
+🔁 7. Qu’est-ce qu’un chargeur d’amorçage (bootloader) ?
+
+Le bootloader est un programme qui s’exécute au démarrage de l’ordinateur et charge le noyau du système d’exploitation en mémoire.
+💡 Exemple : GRUB (GNU GRand Unified Bootloader).
+
+💽 8. Qu’est-ce qu’une partition ?
+
+Une partition est une division logique du disque dur permettant d’y installer plusieurs systèmes ou de séparer les données.
+➡️ Chaque partition contient un système de fichiers propre (ex : ext4, NTFS…).
+
+📁 9. Qu’est-ce qu’un système de fichiers ?
+
+Un système de fichiers définit comment les données sont stockées, organisées et retrouvées sur un disque.
+💡 Exemple : ext4, FAT32, NTFS.
+Sous Linux, tout est représenté sous forme de fichiers hiérarchisés (arborescence).
+
+📄 10. Qu’est-ce qu’un fichier ? Qu’est-ce qu’un inode ?
+
+Un fichier est une unité d’information stockée sur un support (texte, image, binaire, etc.).
+
+Un inode est une structure de données qui contient les métadonnées du fichier (droits, propriétaire, taille, emplacement sur le disque, etc.), mais pas son nom.
