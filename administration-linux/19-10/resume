@@ -1,0 +1,68 @@
+🧠 Résumé du cours – 19/10/2025
+Module : Administration Linux
+
+Pr. Yousef EL MOURABIT
+
+🎯 Objectifs
+
+Comprendre les bases des systèmes d’exploitation.
+
+Découvrir le fonctionnement de Linux : gestion des fichiers, processus et programmation Shell.
+
+🏛️ Introduction aux systèmes d’exploitation
+
+Avant les OS, le programmeur gérait tout (mémoire, processeur, périphériques).
+
+Naissance des systèmes d’exploitation pour simplifier et automatiser.
+
+Histoire du calcul : de l’abaque → machines de Pascal et Leibniz → Babbage → ENIAC (1945).
+
+Architecture de Von Neumann : processeur, mémoire, E/S, programme stocké.
+
+Générations : tubes → transistors → circuits intégrés → microprocesseurs.
+
+Loi de Moore : doublement des transistors tous les 18 mois.
+
+⚙️ Rôle d’un système d’exploitation
+
+Masque la complexité du matériel et gère les ressources (CPU, mémoire, disque...).
+
+Fonctions :
+
+Organisation des fichiers et transferts de données.
+
+Ordonnancement des tâches et partage des ressources.
+
+Caractéristiques : multitâche, multiutilisateur, structuré en couches (kernel, shell, utilitaires).
+
+🐧 Introduction à Linux
+
+1969–1991 : de UNIX (Thompson, Ritchie) à GNU (Stallman) puis Linux (Torvalds).
+
+Fusion GNU + Linux = GNU/Linux, système libre et ouvert.
+
+Caractéristiques :
+
+Portable, stable, multitâche, multiutilisateur.
+
+Système de fichiers hiérarchique et sécurisé.
+
+Interaction via Shell (Bash, SH, etc.) ou interface X Window (KDE, GNOME).
+
+🔓 Philosophie GNU/Linux
+
+4 libertés : exécuter, étudier, partager, améliorer.
+
+Licence GPL : garantit la liberté du code (pas forcément la gratuité).
+
+GNU/Linux = mouvement social du logiciel libre.
+
+💽 Distributions et installation
+
+Distributions = noyau + outils + gestionnaire de paquets :
+
+RedHat/Fedora, SUSE, Mandriva (RPM)
+
+Debian/Ubuntu (.deb)
+
+Installation via UNetbootin : ISO → clé USB bootable → installation Linux.
