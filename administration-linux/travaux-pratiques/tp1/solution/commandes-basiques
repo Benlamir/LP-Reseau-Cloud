@@ -1,0 +1,34 @@
+==========================================================
+ LINUX - COMMANDES DE BASE  (TP1)
+==========================================================
+
+Commande    | Description                                  | Syntaxe                              | Exemple
+-------------|----------------------------------------------|--------------------------------------|----------------------------------------
+man          | Affiche la page de manuel d’une commande.    | man [options] nom_commande           | man ls
+man -k       | Recherche les pages liées à un mot-clé.      | man -k mot_clé                       | man -k copy
+cd           | Change de répertoire courant.                | cd [chemin]                          | cd /home/user
+cd ..        | Remonte d’un niveau.                         | cd ..                                | cd ..
+ls           | Liste le contenu d’un répertoire.            | ls [options] [chemin]                | ls
+ls -a        | Affiche tous les fichiers (même cachés).     | ls -a                                | ls -a /etc
+ls -l        | Liste détaillée (droits, tailles, etc).      | ls -l                                | ls -l /home
+ls -al       | Combine -a et -l.                            | ls -al                               | ls -al
+pwd          | Affiche le chemin complet du dossier actuel. | pwd                                  | pwd
+mkdir        | Crée un nouveau répertoire.                  | mkdir [nom_dossier]                  | mkdir test
+rmdir        | Supprime un répertoire vide.                 | rmdir [nom_dossier]                  | rmdir test
+cp           | Copie un fichier.                            | cp source destination                | cp file1.txt /home/user/
+cp -R        | Copie un dossier récursivement.              | cp -R source destination             | cp -R docs /backup
+mv           | Déplace ou renomme un fichier/dossier.       | mv source destination                | mv old.txt new.txt
+rm           | Supprime un fichier.                         | rm [fichier]                         | rm test.txt
+rm -R        | Supprime un dossier et son contenu.          | rm -R dossier                        | rm -R backup/
+touch        | Crée un fichier vide ou met à jour sa date.  | touch [fichier]                      | touch notes.txt
+echo         | Affiche un texte ou une variable.            | echo [texte]                         | echo "Bonjour"
+history      | Affiche l’historique des commandes.          | history                              | history
+history -c   | Efface tout l’historique.                    | history -c                           | history -c
+who          | Affiche les utilisateurs connectés.          | who                                  | who
+passwd       | Change le mot de passe utilisateur.          | passwd [utilisateur]                 | passwd
+cat          | Affiche le contenu d’un fichier.             | cat [fichier]                        | cat /etc/hostname
+
+==========================================================
+ Astuce : Utilise `man commande` pour tout approfondir.
+==========================================================
+
