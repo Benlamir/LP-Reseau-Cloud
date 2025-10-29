@@ -1,0 +1,4 @@
+img2pdf *.png -o chapitre-26-10.pdf    # combine pngs into one pdf
+
+img2pdf $(ls -v *.png) -o output.pdf   # combine pngs and and put them in order
+
