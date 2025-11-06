@@ -1,0 +1,18 @@
+Reporter dans un ficier text les commandes pour le travail suivant:
+
+1- Se commecter en administrateur Linux:    # sudo su
+
+2- Afficher les fichiers relatifs aux configurations utilisateurs:     # ls -l /etc/passwd /etc/group /etc/shadow /etc/login.defs /etc/skel or ls -l /etc/{passwd,group,shadow,login.defs,skel}
+
+3- Afficher le fichier /etc/passwd par trois commandes différentes:    # cat /etc/passwd, less /etc/passwd, grep "" /etc/passwd
+
+4- On veut afficher l'identité de l'utilisatur user:                   # id user
+
+5- Etablir l'utilisateur Tux1 avec condition suivante:
+ a- son home directory /home/toto1:                                    # mkdir /home/toto1
+ b- son id 508 :                                                       # sudo useradd -u tux1
+ c- son Gid 601 pour le groupe rtoto:                                  # sudo groupadd -g 601 rtoto
+
+6- son mot de passe est 0/toto1:                                       # passwd tux1
+
+7- Afficher la ligne relative à toto1(donc à tux1) dans le fichier /etc/shadow:    # grep tux1 /etc/shadow
