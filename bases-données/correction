@@ -1,0 +1,25 @@
+Elève (N°Matricule :Numérique, Nom :Texte, Prénom :Texte, DateNaissance :Date)
+Contrainte de clé : N°Matricule
+Contrainte d’entité : Pas de valeur NULL
+Classe (NomClasse :Texte, Cycle :Texte)
+Contrainte de clé : NomClasse
+Contrainte d’entité : Pas de valeur NULL
+Fréquenter (#N°Matricule :Numérique,#NomClasse :Texte, AnnéeScolaire :Texte)
+Contrainte de clé : N°Matricule,NomClasse
+Contrainte d’entité : Pas de valeur NULL
+Contrainte de référence :
+	Fréquenter.N°Matricule  REFERENCE Elève.N°Matricule
+	Fréquenter.NomClasse  REFERENCE Classe.NomClasse
+Matière (CodeMatière :Texte, Libellé :Texte)
+Contrainte de clé : CodeMatière
+Contrainte d’entité : Pas de valeur NULL
+Professeur (CodeProfesseur :Numérique, NomProf :Texte, PrénomProf :Texte)
+Contrainte de clé : CodeProfesseur
+Contrainte d’entité : Pas de valeur NULL
+Enseigner (#NomClasse :Texte,#CodeMatière :Texte,#CodeProfesseur :Numérqiue, Année :Numérique)
+Contrainte de clé : NomClasse, CodeMatière, CodeProfesseur
+Contrainte d’entité : Pas de valeur NULL
+Contrainte de référence :
+	Enseigner.NomClasse  REFERENCE Classe.NomClasse
+	Enseigner.CodeMatière  REFERENCE Matière.CodeMatière
+	Enseigner.CodeProfesseur  REFERENCE  Professeur.CodeProfesseur

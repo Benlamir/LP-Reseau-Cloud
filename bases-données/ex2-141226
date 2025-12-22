@@ -1,0 +1,27 @@
+Individus (N°Identité :Numérique, Nom :Texte, Prénom :<texte, DateNaissance :Date,N°téléphone :Texte)
+Contrainte de clé : N°Identité
+Contrainte d’entité : Pas de valeur NULL
+TypeLogements (TypesLogements :Texte, ChargesForfaitaires :Numérique)
+Contrainte de clé : TypeLogements
+Contrainte d’entité : Pas de valeur NULL
+Communes (IdCommune :Numérique, NomCommune :Texte, DistanceAgance :Numérique, NombreHabitants :Numérique)
+Contrainte de clé : IdCommune
+Contrainte d’entité : Pas de valeur NULL
+Quartiers (IdQuartier :Numérique, NomQuartier :Texte, #IdCommune :Numérique)
+Contrainte de clé : IdQuartier
+Contrainte d’entité : Pas de valeur NULL
+Contrainte de référence :
+	Quartier.IdCommune  REFERENCE  Communes.IdCommune
+Logements (N°Logement :Numérique, Adresse :Texte, Superficie :Numérique, Loyer :Numérique, #IdQuartier :Numérique, #TypesLogements :Texte)
+Contrainte de clé : N°Logement
+Contrainte d’entité : Pas de valeur NULL
+Contrainte de référence :
+	Logements.IdQuartier  REFERENCE  Quartier.IdQuartier
+	Logements.TypesLogements  REFERENCE  TypesLogements.TypeLogements
+Locations (N°Location :Numérique, DateDébut :Date, DateFin :Date, #N°Logement :Numérique, #N°Identité :Numérqiue)
+Contrainte de clé : N°Location
+Contrainte d’entité : Pas de valeur NULL
+Contrainte de référence :
+	Location.N°Logement  REFERENCE  Logements.N°Logement
+	Locations.N°Identité  REFERENCE  Individus.N°Identité
+fwi-miui-gyh

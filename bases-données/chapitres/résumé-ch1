@@ -1,0 +1,83 @@
+🧾 FICHE RÉSUMÉ — CHAPITRE 1 (PRÊTE EXAMEN)
+1️⃣ Base de données / SGBD
+
+Base de données : ensemble structuré de données
+
+SGBD : logiciel qui permet de créer, manipuler, sécuriser les données
+(ex : MySQL, PostgreSQL, Oracle)
+
+2️⃣ Pourquoi modéliser (Merise)
+
+Le monde réel est complexe
+
+Le SGBD impose des règles
+
+👉 Le MCD permet de modéliser avant de coder
+
+3️⃣ MCD – Modèle Conceptuel de Données
+🔹 Entité
+
+Objet du monde réel (Client, Compte)
+
+Possède des attributs
+
+Possède au moins un identifiant
+
+🔹 Attribut
+
+Propriété simple (nom, date, montant)
+
+❌ Pas multiple (téléphones, emails…)
+
+🔹 Identifiant
+
+Unique
+
+Obligatoire
+
+Stable (ex : CIN)
+
+4️⃣ Association
+
+Lien entre entités (passer, posséder…)
+
+Verbe à l’infinitif
+
+Cardinalités (min, max)
+
+min : 0 ou 1
+
+max : 1 ou n
+👉 Toujours raisonner dans les deux sens
+
+Exemple :
+
+Client (0,n) —— passer —— (1,1) Commande
+
+5️⃣ Règles importantes
+
+Noms uniques
+
+Attribut multiple → entité + association
+
+Factoriser quand possible
+
+6️⃣ Normalisation
+
+1FN : attributs simples
+
+2FN : pas de dépendance partielle (clé composée)
+
+3FN : pas de dépendance entre attributs non clés
+
+👉 Objectif : éviter redondances et anomalies
+
+7️⃣ Démarche de conception
+
+Recueil des besoins
+
+Identification des entités
+
+Identification des associations
+
+Vérification / normalisation
